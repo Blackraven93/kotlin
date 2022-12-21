@@ -1,12 +1,18 @@
-fun main() {
-    var a = 1
-    println(a++)
-    println(a)
+import kotlin.math.PI
+
+fun circleArea(radius: Double):Double {
+    return PI*radius*radius
 }
 
-fun sum() {
-    println("Please type two number")
-    val x = readLine()!!.toInt()
-    val y = readLine()!!.toInt()
-    println(x + y)
+fun readInt(): Int {
+    return readLine()!!.toInt()
 }
+
+fun main() {
+    print("Enter radius: ")
+    val radius = readLine()!!.toDouble()
+    println("Circle area: ${circleArea(radius)}")
+    println(readInt())
+}
+
+
