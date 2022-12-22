@@ -1,4 +1,5 @@
 import kotlin.math.PI
+import range
 
 fun circleArea(radius: Double):Double {
     return PI*radius*radius
@@ -25,6 +26,8 @@ fun main() {
     // 인자 순서를 변경할 시 입력하려면 모두 입력하던가
     // 아니면 뒤의 타입을 생략해도 괜찮다.
 //    println(swap(s = "Hello", 1, from = 3))
+
+    range()
 }
 
 
