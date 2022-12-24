@@ -1,5 +1,6 @@
 import kotlin.math.PI
 import range
+import loop
 
 fun circleArea(radius: Double):Double {
     return PI*radius*radius
@@ -28,6 +29,7 @@ fun main() {
 //    println(swap(s = "Hello", 1, from = 3))
 
     range()
+    loop()
 }
 
 
