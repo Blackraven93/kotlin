@@ -12,3 +12,14 @@ fun loop() {
 
     println("Right: it's $num")
 }
+
+fun forLoop() {
+    val sequenceSquare = IntArray(10) { it * it }
+    var sum = 0
+
+    for (x in sequenceSquare) {
+        sum += x
+    }
+
+    println("Sum: $sum")
+}
