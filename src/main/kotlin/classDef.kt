@@ -18,4 +18,17 @@ fun main() {
     val person = Person("Black", "raven")
     // println(person.firstName) Error
     println(person.fullName())
+
+    class Point(val x:Int, val y: Int) {
+        fun shift(dx: Int, dy:Int): Point = Point(x + dx, y + dy)
+        override fun toString() = "($x, $y)"
+    }
+
+    val p = Point(10, 10)
+    println(p.shift(-1, 3))
+}
+
+fun foo() {
+    // 지역 클래스
+//    println(Point(0, 0))
 }
